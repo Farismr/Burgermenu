@@ -33,17 +33,7 @@ footer{
     padding: 0;
 }
 
-h1 {
-     /* או relative, בהתאם לקונטקסט */
-    top: 30%; /* ממקם את ה-h1 באמצע העמוד אנכית */
-    left: 50%; /* ממקם את ה-h1 באמצע העמוד אופקית */
-    transform: translate(-50%, -50%); /* מתקן את המיקום למרכז המדויק */
-    color: #f6f4f4;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-}
+
 
 
 h2{
