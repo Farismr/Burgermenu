@@ -50,8 +50,8 @@ h1 {
     font-style: italic;
     font-weight: bold;
     text-align: center;
-    margin: 1px 0;
-    margin-block-start: 8em;
+    margin: 3px 0;
+    margin-block-start: 8.5em;
    
    
 }
@@ -108,7 +108,7 @@ li {
     justify-content: space-around; /* ממרכז את האלמנטים אופקית */
     align-items: center; /* ממרכז את האלמנטים אנכית */
     width: 100%;
-   height: 100cm; /* מתיחת הקונטיינר לכל גובה המסך */
+   height: 90cm; /* מתיחת הקונטיינר לכל גובה המסך */
    align-content: center; /* מבטיח שכל התוכן ימורכז גם אם יש יותר משורה אחת */
  
 }
