@@ -145,6 +145,10 @@ li {
     height: 90px;
     border-radius: 50%;
     overflow: hidden;
+     display: content;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     top: 90px;
     left: 50%;
     transform: translateX(-50%);
