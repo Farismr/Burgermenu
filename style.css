@@ -1,14 +1,23 @@
+
 html, body {
     height: 100%; /* מגדיר את הגובה ל-100% מגובה החלון */
     margin: 0;
     padding: 0;
     overflow: hidden; /* מאפשר גלילה רק אם נחוץ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
 }
 
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* שינוי מ-center ל-flex-start כדי למנוע חיתוך */
@@ -28,23 +37,26 @@ footer{
     flex-direction: column;
     justify-content: center; /* ממרכז אנכית */
     align-items: center; /* ממרכז אופקית */
-    height: 100vh; /* גובה הקונטיינר יהיה כגובה המסך */
-    margin: 0;
-    padding: 0;
+    width: 100%;
+   /* height: 100vh; /* גובה הקונטיינר יהיה כגובה המסך */
+    /*margin: 0;
+    padding: 0;*/
 }
 
 h1 {
-    position: absolute; /* או relative, בהתאם לקונטקסט */
-    top: 26%; /* ממקם את ה-h1 באמצע העמוד אנכית */
-    left: 50%; /* ממקם את ה-h1 באמצע העמוד אופקית */
-    transform: translate(-50%, -50%); /* מתקן את המיקום למרכז המדויק */
+    grid-column: 2; /* ממקם את ה-h1 בעמודה השנייה */
     color: #f6f4f4;
-    font-size: 1.2em;
+    font-size: 1.7em;
     font-style: italic;
     font-weight: bold;
     text-align: center;
-    
+    margin: 3px 0;
+    margin-block-start: 9.5em;
+   
+   
 }
+
+
 
 
 
@@ -95,20 +107,22 @@ li {
     flex-wrap: wrap;
     justify-content: space-around; /* ממרכז את האלמנטים אופקית */
     align-items: center; /* ממרכז את האלמנטים אנכית */
-    height: 160cm; /* מתיחת הקונטיינר לכל גובה המסך */
-    align-content: center; /* מבטיח שכל התוכן ימורכז גם אם יש יותר משורה אחת */
+    width: 100%;
+   height: 150cm; /* מתיחת הקונטיינר לכל גובה המסך */
+   align-content: center; /* מבטיח שכל התוכן ימורכז גם אם יש יותר משורה אחת */
+ 
 }
+
 
 .category {
     width: 130px;
     height: 130px;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     margin: 12px;
     border: 1px solid #ccc;
-    text-decoration: none;
     background-size: cover;
     background-position: center;
     font-size: large;
@@ -153,16 +167,16 @@ li {
 }
 
 .profile-circle {
-    width: 75px;
-    height: 75px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     overflow: hidden;
-     display: content;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
-     position: fixed;
-    top: 95px;
+    margin: 5px;
+    position: fixed;
+    top: 130px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
@@ -205,3 +219,4 @@ li {
     font-weight: bold; /* Make the price text bold */
     margin-left: 120px; /* Increased space between the item name and the price */
 }
+
