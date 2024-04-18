@@ -35,7 +35,7 @@ footer{
 
 h1 {
     position: absolute; /* או relative, בהתאם לקונטקסט */
-    top: 32%; /* ממקם את ה-h1 באמצע העמוד אנכית */
+    top: 25%; /* ממקם את ה-h1 באמצע העמוד אנכית */
     left: 50%; /* ממקם את ה-h1 באמצע העמוד אופקית */
     transform: translate(-50%, -50%); /* מתקן את המיקום למרכז המדויק */
     color: #f6f4f4;
@@ -93,18 +93,18 @@ li {
     flex-wrap: wrap;
     justify-content: space-around; /* ממרכז את האלמנטים אופקית */
     align-items: center; /* ממרכז את האלמנטים אנכית */
-    height: 250vh; /* מתיחת הקונטיינר לכל גובה המסך */
+    height: 150cm; /* מתיחת הקונטיינר לכל גובה המסך */
     align-content: center; /* מבטיח שכל התוכן ימורכז גם אם יש יותר משורה אחת */
 }
 
 .category {
     width: 120px;
     height: 120px;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin: 10px;
+    margin: 8px;
     border: 1px solid #ccc;
     text-decoration: none;
     background-size: cover;
@@ -161,7 +161,7 @@ li {
     justify-content: center;
     margin: auto;
     position: fixed;
-    top: 150px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
