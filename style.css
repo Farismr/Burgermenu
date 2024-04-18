@@ -50,8 +50,8 @@ h1 {
     font-style: italic;
     font-weight: bold;
     text-align: center;
-    margin: 3px 0;
-    margin-block-start: 8em;
+    margin: 1px 0;
+    margin-block-start: 7em;
    
    
 }
@@ -176,7 +176,7 @@ li {
     justify-content: center;
     margin: 5px;
     position: fixed;
-    top: 125px;
+    top: 90px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
