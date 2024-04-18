@@ -44,14 +44,14 @@ footer{
 }
 
 h1 {
-    grid-column: 2; /* ממקם את ה-h1 בעמודה השנייה */
+    
     color: #f6f4f4;
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-style: italic;
     font-weight: bold;
     text-align: center;
     margin: 3px 0;
-    margin-block-start: 9.5em;
+    margin-block-start: 8.5em;
    
    
 }
@@ -176,7 +176,7 @@ li {
     justify-content: center;
     margin: 5px;
     position: fixed;
-    top: 130px;
+    top: 115px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
