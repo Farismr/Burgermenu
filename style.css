@@ -2,13 +2,13 @@ html, body {
     height: 100%; /* מגדיר את הגובה ל-100% מגובה החלון */
     margin: 0;
     padding: 0;
-    overflow: auto; /* מאפשר גלילה רק אם נחוץ */
+    overflow: hidden; /* מאפשר גלילה רק אם נחוץ */
 }
 
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    padding:0;
+    
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* שינוי מ-center ל-flex-start כדי למנוע חיתוך */
@@ -75,13 +75,13 @@ ul {
 }
 
 li {
-    color: rgb(1, 0, 3);
+    color: rgb(248, 248, 249);
     font-size: 17px; /* Increase font size */
     font-weight: bold; /* Make the font bolder */
     line-height: 0.5; /* Increase line spacing */
     margin: 10px 0; /* Add more space between list items */
     padding: 10px; /* Add padding inside each list item */
-    background-color: #f7f6f6; /* Optional: Add a background color */
+    background-color: #040404; /* Optional: Add a background color */
     border-radius: 100px;
     transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
    
@@ -155,13 +155,13 @@ li {
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    display: flex;
+    display: grid;
     
     align-items: center;
     justify-content: center;
     margin: auto;
     position: fixed;
-    top: 165px;
+    top: 150px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
@@ -198,7 +198,7 @@ li {
 
 .price {
     float: right; /* Position the price to the right */
-    background-color: #f8f8f8; /* Light background for the price tag */
+    background-color: #121212; /* Light background for the price tag */
     padding: 2px 5px; /* Padding around the price text */
     border-radius: 3px; /* Rounded corners for the price tag */
     font-weight: bold; /* Make the price text bold */
