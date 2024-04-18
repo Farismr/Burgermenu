@@ -35,7 +35,7 @@ footer{
 
 h1 {
     position: absolute; /* או relative, בהתאם לקונטקסט */
-    top: 31%; /* ממקם את ה-h1 באמצע העמוד אנכית */
+    top: 32%; /* ממקם את ה-h1 באמצע העמוד אנכית */
     left: 50%; /* ממקם את ה-h1 באמצע העמוד אופקית */
     transform: translate(-50%, -50%); /* מתקן את המיקום למרכז המדויק */
     color: #f6f4f4;
@@ -95,7 +95,7 @@ li {
     flex-wrap: wrap;
     justify-content: space-around; /* ממרכז את האלמנטים אופקית */
     align-items: center; /* ממרכז את האלמנטים אנכית */
-    height: 150cm; /* מתיחת הקונטיינר לכל גובה המסך */
+    height: 160cm; /* מתיחת הקונטיינר לכל גובה המסך */
     align-content: center; /* מבטיח שכל התוכן ימורכז גם אם יש יותר משורה אחת */
 }
 
@@ -106,7 +106,7 @@ li {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin: 8px;
+    margin: 12px;
     border: 1px solid #ccc;
     text-decoration: none;
     background-size: cover;
@@ -153,8 +153,8 @@ li {
 }
 
 .profile-circle {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     overflow: hidden;
      display: content;
