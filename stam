@@ -1,0 +1,358 @@
+/*footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 1cm 1cm;
+    background-image: url('photo.jpg'); /* הכנס את הנתיב לתמונה שבחרת */
+   /* background-size: cover; /* מאפשר כיסוי מלא של העמוד, תוך שמירה על יחסי הגודל של התמונה */
+   /* background-position: center; /* ממקם את התמונה במרכז העמוד */
+   /* background-repeat: repeat; /* מונע חזרה על התמונה */
+/*}*/
+
+html, body {
+    height: 100%; /* מגדיר את הגובה ל-100% מגובה החלון */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* מונע גלילה */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('photo.jpg'); /* הכנס את הנתיב לתמונה שבחרת */
+    background-size: cover; /* מאפשר כיסוי מלא של העמוד */
+    background-position: center; /* ממקם את התמונה במרכז העמוד */
+    background-repeat: no-repeat; /* מונע חזרה על התמונה */
+    min-height: 100vh; /* מבטיח שה-body לא יהיה נמוך יותר מהמסך */
+}
+
+
+
+
+
+
+
+h1 {
+    width: auto;
+    height: auto;
+    color: #f6f4f4;
+    display: grid;
+    top: 0px;
+    font-size: 1.2em;
+    font-style: italic;
+    margin-block-start: 15em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi:isolate;
+}
+
+h2{
+    width: auto;
+    height: auto;
+    color: #f6f4f4;
+    display: block;
+    font-size: xx-large;
+    font-style: italic;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bolder;
+    unicode-bidi:isolate;
+}
+
+
+.categories, .back-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    color: #ccc;
+    
+    
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #ccc;
+}
+
+li {
+    color: black;
+    font-size: 17px; /* Increase font size */
+    font-weight: bold; /* Make the font bolder */
+    line-height: 0.5; /* Increase line spacing */
+    margin: 15px 0; /* Add more space between list items */
+    padding: 10px; /* Add padding inside each list item */
+    background-color: #faf6f6; /* Optional: Add a background color */
+    border-radius: 5px; /* Optional: Round the corners */
+    box-shadow: 0 2px 4px rgba(8, 4, 245, 0.1); /* Optional: Add a subtle shadow */
+}
+
+
+
+
+.category {
+    color: #f8f1f1; /* משנה את צבע הטקסט ללבן */
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 40px;
+    border: 10px solid #ccc;
+    background-size: cover; /* מתאים את התמונה לגודל האלמנט */
+    background-position: center; /* ממקם את התמונה במרכז */
+    text-decoration: none; /* מונע קו תחתי */
+    font-size: 30px;
+    font-weight: 1000 bolder;
+    font-style: italic;
+}
+
+
+.back-button-container {
+    position: fixed; /* ממשיך לשמור על פוזיציה קבועה */
+    top: 23px; /* שונה מ-bottom ל-top ומגדיר את המרחק מהחלק העליון של המסך */
+    right: 3cm; /* מרחק מהצד השמאלי של המסך */
+    z-index: 1000; /* דואג שהכפתור יופיע מעל לשאר התכנים */
+}
+
+
+.back-button {
+    display: block;
+    padding: 15px 30px; /* רווח פנימי: גובה ורוחב */
+    background-color: #f9f7f6; /* צבע רקע ירוק */
+    color: rgb(3, 3, 3); /* צבע הטקסט לבן */
+    text-decoration: none; /* הסרת קו תחתון */
+    border: red; /* הסרת מסגרת */
+    border-radius: 100px; /* פינות מעוגלות */
+    width: 45px;
+    height: 70px;
+    font-size: 16px; /* גודל הטקסט */
+    font-weight: bold; /* משקל הטקסט */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* צל עדין */
+    transition: background-color 0.3s, color 0.3s; /* אנימציה בעת העברה */
+}
+
+.back-button:active {
+    background-color: #3e8e41; /* צבע רקע כהה יותר בעת לחיצה */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* צל עמוק יותר בעת לחיצה */
+}
+
+
+
+
+
+.back-button:hover {
+    background-color: #e60a0a; /* שינוי צבע רקע בעת העברת העכבר */
+}
+
+
+#logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    
+}
+
+
+footer {
+   display: none;
+  
+}
+
+
+
+
+.profile-circle {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%; 
+    overflow: hidden;
+    display: content;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: fixed; /* שינוי מ-relative ל-fixed */
+    top: 165px; /* מתאים את המיקום לראש העמוד */
+    left: 50%; /* ממקם במרכז המסך, על פי הציר האופקי */
+    transform: translateX(-50%); /* כדי למרכז באופן מדויק */
+    z-index: 5;
+}
+
+
+
+.profile-pic {
+    width: 100%; /* מתאים את רוחב התמונה לעיגול */
+    height: 100%; /* שומר על יחס הגודל הנכון של התמונה */
+}
+
+#homePage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0.5;
+    width: 92%;
+    height: 25%; /* מכסה את כל המסך */
+    background: url('vegasburgerlogo.jpg') no-repeat center center;
+    background-size: cover; /* מתאים את התמונה לכיסוי מלא של המסך */
+    z-index: -1; /* משפיל את השכבה לתחתית */
+}
+
+
+
+
+
+.category {
+    width: 150px;
+    height: 150px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid #f7eeee;
+    background-size: cover; /* מתאים את התמונה לגודל האלמנט */
+    background-position: center; /* ממקם את התמונה במרכז */
+    font-size: x-large;
+    
+}
+
+#category1 { background-image: url('alhaash.png'); }
+#category2 { background-image: url('burger.jpg'); }
+#category3 { background-image: url('platah.jpg'); }
+#category4 { background-image: url('salad.avif'); }
+#category5 { background-image: url('colddrink.jpeg'); }
+#category6 { background-image: url('alhaash.png'); }
+
+.category-link {
+    color: #f1e9e9; /* שינוי לצבע אדום, החלף את הקוד צבע לפי בחירתך */
+    text-decoration: none; /* הסרת הקו התחתון מקישורים */
+}
+
+.category-page .profile-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: fixed;
+    top: 20px;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/*.category-page .profile-pic {
+    width: 100%;
+    height: auto;
+    display: block; /* מבטיח שהתמונה מתמלאת כל המקום בעיגול */
+/*}*/
+
+/*body {
+    margin: 0;
+    padding: 0;
+    background-image: url('photo.jpg');
+    background-size: cover;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    max-height: 100vh; /* מינימום גובה כך שיכסה את כל המסך */
+/*}*/
+
+/*header, main, footer {
+    background: none; /* מבטל את הרקע של האלמנטים הפנימיים */
+/*}*/
+
+/* ניתן להוסיף עיצובים נוספים כדי להבטיח נראות טובה יותר לטקסט ואלמנטים אחרים */
+
+
+/* הגדרות נוספות כרצונך לעיצוב הטקסט ואלמנטים */
+
+#homePage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* מסדר את התכנים בצורה עמודה */
+    justify-content: center; /* ממרכז את התוכן ורטיקלית */
+    align-items: center; /* ממרכז את התוכן אופקית */
+}
+
+.price {
+    float: right; /* Position the price to the right */
+    background-color: #f8f8f8; /* Light background for the price tag */
+    padding: 2px 5px; /* Padding around the price text */
+    border-radius: 3px; /* Rounded corners for the price tag */
+    font-weight: bold; /* Make the price text bold */
+    margin-left: 120px; /* Increased space between the item name and the price */
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+   margin: 0;
+   min-height: 100%;
+}
+
+.product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+
+#logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: absolute; /* שינוי חשוב כדי להבטיח מיקום נכון */
+    top: 10px; /* למשל, יכול להיות 10px מהחלק העליון של המסך */
+    left: 10px; /* ו-10px מהצד השמאלי */
+    z-index: 0; /* יבטיח שהלוגו יופיע מעל תמונת הרקע */
+}
+
+/*.highlight {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.product-name, .product-price {
+    flex: 1;
+    text-align: center; /* ממרכז את הטקסט */
+/*}*/
+
+/*html, body {
+    height: 100%; /* מבטיח שהאלמנטים מקבלים את גובה המסך כולו */
+   /* margin: 0; /* מסיר מרווחים ברירת מחדל */
+    /*padding: 0; /* מסיר ריפודים ברירת מחדל */
+   /* overflow-x: hidden; /* מונע גלילה אופקית */
+/*}*/
+
+/*.container { /* הוסף מחלקה זו לאלמנט המכיל את הרשימה אם עדיין אין */
+    /*max-height: 90vh; /* או כל גובה רצוי, vh מייצג אחוז מגובה המסך */
+    /*overflow-y: scroll; /* מאפשר גלילה אנכית אם התוכן חורג */
+/*}*/
+
+/*.custom-list li {
+    margin-bottom: 5px; /* מרווח תחתון מופחת לכל שורה ברשימה */
+   /* padding: 5px 0; /* ריפוד פנימי תחתון ועליון מופחת */
+/*}*/
+
+
