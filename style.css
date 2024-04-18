@@ -35,7 +35,7 @@ footer{
 
 h1 {
     position: absolute; /* או relative, בהתאם לקונטקסט */
-    top: 28%; /* ממקם את ה-h1 באמצע העמוד אנכית */
+    top: 26%; /* ממקם את ה-h1 באמצע העמוד אנכית */
     left: 50%; /* ממקם את ה-h1 באמצע העמוד אופקית */
     transform: translate(-50%, -50%); /* מתקן את המיקום למרכז המדויק */
     color: #f6f4f4;
@@ -153,8 +153,8 @@ li {
 }
 
 .profile-circle {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     overflow: hidden;
      display: content;
@@ -162,7 +162,7 @@ li {
     justify-content: center;
     margin: auto;
      position: fixed;
-    top: 100px;
+    top: 95px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
