@@ -66,6 +66,7 @@ h2{
     margin-inline-end: 0px;
     font-weight: bolder;
     unicode-bidi:isolate;
+    text-shadow:1px 1px #0ac9e6;
 }
 
 .categories, .back-button-container {
@@ -114,8 +115,8 @@ li {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin: 13px;
-    padding: 10px;
+    margin: 10px;
+    padding: 15px;
     border: 1px solid #ccc;
     background-size: cover;
     background-position: center;
@@ -123,15 +124,16 @@ li {
     font-weight: 900 bolder;
     color: #f8f1f1;
     text-decoration: none;
+    margin-bottom: 8px;
     
 }
 
-#category1 { background-image: url('alhaash.png'); }
-#category2 { background-image: url('burger.jpg'); }
+#category1 { background-image: url('petah.jpeg'); }
+#category2 { background-image: url('burger1.jpeg'); }
 #category3 { background-image: url('platah.jpg'); }
 #category4 { background-image: url('salad.avif'); }
 #category5 { background-image: url('colddrink.jpeg'); }
-#category6 { background-image: url('alhaash.png'); }
+#category6 { background-image: url('baget.jpeg'); }
 
 .back-button-container {
     position: fixed; /* ממשיך לשמור על פוזיציה קבועה */
@@ -151,10 +153,9 @@ li {
     border-radius: 100px; /* פינות מעוגלות */
     width: 45px;
     height: 70px;
-    font-size: 16px; /* גודל הטקסט */
-    font-weight: bold; /* משקל הטקסט */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* צל עדין */
-    transition: background-color 0.3s, color 0.3s; /* אנימציה בעת העברה */
+    font-size: 20px; /* גודל הטקסט */
+    font-weight:  bolder; /* משקל הטקסט */
+    transition: background-color 0.3s, color 0.1s; /* אנימציה בעת העברה */
 }
 
 
@@ -176,6 +177,7 @@ li {
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
+    box-shadow: 0 8px 12px rgba(249, 2, 2, 0.844); /* צל עדין */
 }
 
 .profile-pic {
