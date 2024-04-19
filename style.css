@@ -46,7 +46,8 @@ h1 {
     white-space: pre-wrap;
     position: relative;
     top: 250px;
-    text-shadow:  2px 2px #ff0000;;
+    text-shadow:  2px 2px #ff0000;
+    right: 10px; ;
 }
 
 
@@ -96,21 +97,26 @@ li {
 
 
 .categories {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: space-around; /* ממרכז את האלמנטים אופקית */
     align-items: center; /* ממרכז את האלמנטים אנכית */
-    width: 100%;
-   height: 2cm; /* מתיחת הקונטיינר לכל גובה המסך */
-   align-content: center; /* מבטיח שכל התוכן ימורכז גם אם יש יותר משורה אחת */
-   
+    width: 90%;
+    height: 3.5cm; /* מתיחת הקונטיינר לכל גובה המסך */
+    align-content: center; /* מבטיח שכל התוכן ימורכז גם אם יש יותר משורה אחת */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(3, auto); /* Three rows to accommodate six items */
+    gap: 20px; /* Space between the grid items */
+    max-width: 600px; /* Adjust this as needed for your design */
+    margin-bottom: 20px;
+    padding: 0 20px; /* Add horizontal padding if needed */
    
 }
 
 
 .category {
-    width: 85px;
-    height: 85px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,4 +222,17 @@ li {
     border-radius: 3px; /* Rounded corners for the price tag */
     font-weight: bold; /* Make the price text bold */
     margin-left: 120px; /* Increased space between the item name and the price */
+} 
+
+@media (max-width: 768px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr); /* Continue with two columns */
+        max-width: 100%; /* Use maximum width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr); /* Still maintain two columns on very small devices */
+    }
 }
