@@ -4,15 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden; /* מאפשר גלילה רק אם נחוץ */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-
+    
 }
 
 body {
@@ -25,7 +17,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 50vh;
+    z-index: -1;
 }
 
 footer{
@@ -46,14 +39,14 @@ footer{
 h1 {
     
     color: #f6f4f4;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-style: italic;
     font-weight: bold;
-    text-align: center;
-    margin: 3px 0;
-    margin-block-start: 8.5em;
-   
-   
+    text-align: center;   
+    white-space: pre-wrap;
+    position: relative;
+    top: 280px;
+    text-shadow:  2px 2px #ff0000;;
 }
 
 
@@ -97,7 +90,6 @@ li {
     padding: 10px; /* Add padding inside each list item */
     background-color: #040404; /* Optional: Add a background color */
     border-radius: 100px;
-    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
    
 }
 
@@ -108,9 +100,10 @@ li {
     justify-content: space-around; /* ממרכז את האלמנטים אופקית */
     align-items: center; /* ממרכז את האלמנטים אנכית */
     width: 100%;
-   height: 90cm; /* מתיחת הקונטיינר לכל גובה המסך */
+   height: 1cm; /* מתיחת הקונטיינר לכל גובה המסך */
    align-content: center; /* מבטיח שכל התוכן ימורכז גם אם יש יותר משורה אחת */
- 
+   
+   
 }
 
 
@@ -121,13 +114,16 @@ li {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin: 12px;
+    margin: 13px;
+    padding: 10px;
     border: 1px solid #ccc;
     background-size: cover;
     background-position: center;
-    font-size: large;
-    font-weight: bolder;
+    font-size: x-large;
+    font-weight: 900 bolder;
     color: #f8f1f1;
+    text-decoration: none;
+    
 }
 
 #category1 { background-image: url('alhaash.png'); }
@@ -167,8 +163,8 @@ li {
 }
 
 .profile-circle {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -176,7 +172,7 @@ li {
     justify-content: center;
     margin: 5px;
     position: fixed;
-    top: 95px;
+    top: 140px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
@@ -189,14 +185,14 @@ li {
 
 #homePage::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0.5;
     width: 92%;
     height: 25%; /* מכסה את כל המסך */
     background: url('vegasburgerlogo.jpg') no-repeat center center;
     background-size: cover; /* מתאים את התמונה לכיסוי מלא של המסך */
-    z-index: -1; /* משפיל את השכבה לתחתית */
+    z-index: 5; /* משפיל את השכבה לתחתית */
 }
 
 .category-page .profile-circle {
@@ -219,4 +215,3 @@ li {
     font-weight: bold; /* Make the price text bold */
     margin-left: 120px; /* Increased space between the item name and the price */
 }
-
