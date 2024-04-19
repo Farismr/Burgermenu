@@ -106,7 +106,7 @@ li {
     align-content: center; /* מבטיח שכל התוכן ימורכז גם אם יש יותר משורה אחת */
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     grid-template-rows: repeat(3, auto); /* Three rows to accommodate six items */
-    gap: 20px; /* Space between the grid items */
+    gap: 10px; /* Space between the grid items */
     max-width: 600px; /* Adjust this as needed for your design */
     margin-bottom: 20px;
     padding: 0 20px; /* Add horizontal padding if needed */
@@ -180,7 +180,7 @@ li {
     margin: 5px;
     position: fixed;
     top: 140px;
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%);
     z-index: 5;
     box-shadow: 0 8px 12px rgba(249, 2, 2, 0.844); /* צל עדין */
